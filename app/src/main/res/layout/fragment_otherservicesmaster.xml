@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-52dp"
+        tools:layout_editor_absoluteY="-38dp">
+
+        <ImageView
+            android:id="@+id/imageMaster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+        <TextView
+            android:id="@+id/NameMaster"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginTop="4dp"
+            android:text="Камила"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageMaster"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/WorkExperience"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Опыт работы:"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/textViewNumber"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNumber" />
+
+        <TextView
+            android:id="@+id/WorkExperienceYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="2 года"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/WorkExperience"
+            app:layout_constraintStart_toEndOf="@+id/WorkExperience"
+            app:layout_constraintTop_toTopOf="@+id/WorkExperience" />
+
+        <TextView
+            android:id="@+id/Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Статус:"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/WorkExperience"
+            app:layout_constraintTop_toBottomOf="@+id/WorkExperience" />
+
+        <TextView
+            android:id="@+id/StatusBusy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:text="занята"
+            android:textSize="12dp"
+            android:textColor="@color/red"
+            app:layout_constraintBottom_toBottomOf="@+id/Status"
+            app:layout_constraintStart_toEndOf="@+id/Status"
+            app:layout_constraintTop_toTopOf="@+id/Status" />
+
+        <ImageView
+            android:id="@+id/imageVieInsMaster"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/imagePhone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.61"
+            app:layout_constraintStart_toEndOf="@+id/imagePhone"
+            app:layout_constraintTop_toTopOf="@+id/imagePhone"
+            app:srcCompat="@drawable/inslogo" />
+
+        <ImageView
+            android:id="@+id/imagePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewNumber"
+            app:layout_constraintStart_toEndOf="@+id/textViewNumber"
+            app:layout_constraintTop_toTopOf="@+id/textViewNumber"
+            app:srcCompat="@drawable/ic_phone_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/textViewNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="+996(702 858 956)"
+            android:textColor="#070707"
+            android:textColorHint="#070707"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/imageMaster"
+            app:layout_constraintTop_toBottomOf="@+id/NameMaster" />
+
+        <TextView
+            android:id="@+id/textViewDescriptionMasters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Мы всегда рады видеть новых гостей в нашем салоне красоты! Широкий спектр услуг, отличное качество - по приемлемым ценам. "
+            android:textColor="#131212"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageMaster"
+            app:layout_constraintTop_toBottomOf="@+id/StatusBusy" />
+
+        <TextView
+            android:id="@+id/textViewMastersService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Услуги: "
+            android:textSize="12dp"
+            android:textColor="@color/black"
+
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.171"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescriptionMasters" />
+
+        <ImageView
+            android:id="@+id/imageViewService1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewService2"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMastersService"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imageViewService2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewService1"
+            app:layout_constraintTop_toTopOf="@+id/imageViewService1"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imageViewLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/imageViewService1"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewService1"
+            app:srcCompat="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/imageViewSeved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintStart_toEndOf="@+id/imageViewLike"
+            app:layout_constraintTop_toTopOf="@+id/imageViewLike"
+            app:srcCompat="@drawable/save" />
+
+        <ImageView
+            android:id="@+id/imageViewShere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintStart_toEndOf="@+id/imageViewSeved"
+            app:layout_constraintTop_toTopOf="@+id/imageViewSeved"
+            app:srcCompat="@drawable/ic_menu_share" />
+
+        <Button
+            android:id="@+id/buttonAddServicesMaster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorforbutton"
+            android:textColor="@color/black"
+            android:padding="6dp"
+            android:text="Другие услуги Мастера"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewSeved" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
